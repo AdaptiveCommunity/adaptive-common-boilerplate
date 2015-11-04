@@ -1,0 +1,12 @@
+app:
+  name: <%= name %>
+  id: <%= appid %>
+  version: 0.0.1
+
+adaptive:
+  version: <%= adaptiveversion %>
+
+  ios:
+    version: <%= iosversion %>
+  android:
+    version: <%= androidversion %>
