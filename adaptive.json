@@ -1,0 +1,18 @@
+{
+  "name": "<%= name %>",
+  "id": "<% appid %>",
+  "version": "0.0.1",
+  "engine": {
+    "name": "adaptive",
+    "version": "<%= adaptiveversion %>"
+  },
+  "platforms": [
+    {
+      "name": "android",
+      "flavours": [
+        "mobile":"5.0",
+        "tv":"5.0"
+      ]
+    }
+  ]
+}
