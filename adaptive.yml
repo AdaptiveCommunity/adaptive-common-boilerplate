@@ -1,5 +1,5 @@
 name: <%= name %>
-id: <%= appid %>
+appid: <%= appid %>
 version: 0.0.1
 engine:
   name: adaptive
