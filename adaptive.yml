@@ -1,12 +1,15 @@
-app:
-  name: <%= name %>
-  id: <%= appid %>
-  version: 0.0.1
-
-adaptive:
-  version: <%= adaptiveversion %>
-
-  ios:
-    version: <%= iosversion %>
-  android:
+name: <%= name %>
+id: <%= appid %>
+version: 0.0.1
+engine:
+  name: adaptive
+  version: <%= engineversion %>
+platforms:
+  - name: android
     version: <%= androidversion %>
+    flavours: 
+      - mobile
+  - name: darwin
+    version: <%= darwinversion %>
+    flavours: 
+      - mobile
