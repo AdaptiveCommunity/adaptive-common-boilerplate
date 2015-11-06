@@ -7,7 +7,7 @@ engine:
 flavours:
   - name: mobile
     platform: android
-    version: <%= androidversion %>
+    version: 5.0
   - name: mobile
     platform: darwin
-    version: <%= androidversion %>
+    version: 8.0
