@@ -8,13 +8,6 @@ flavours:
   - name: mobile
     platform: android
     version: <%= androidversion %>
-    companions: 
-      - watch
   - name: mobile
     platform: darwin
-    version: <%= androidversion %>
-    companions: 
-      - watch
-  - name: tv
-    platform: android
     version: <%= androidversion %>
