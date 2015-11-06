@@ -4,10 +4,12 @@ version: 0.0.1
 engine:
   name: adaptive
   version: <%= engineversion %>
-flavours:
-  - name: mobile
-    platform: android
+platforms:
+  - name: android
     version: 5.0
-  - name: mobile
-    platform: darwin
+    flavors: 
+        - mobile
+  - name: darwin
     version: 8.0
+    flavors: 
+        - mobile
