@@ -4,12 +4,17 @@ version: 0.0.1
 engine:
   name: adaptive
   version: <%= engineversion %>
-platforms:
-  - name: android
+flavours:
+  - name: mobile
+    platform: android
     version: <%= androidversion %>
-    flavours: 
-      - mobile
-  - name: darwin
-    version: <%= darwinversion %>
-    flavours: 
-      - mobile
+    companions: 
+      - watch
+  - name: mobile
+    platform: darwin
+    version: <%= androidversion %>
+    companions: 
+      - watch
+  - name: tv
+    platform: android
+    version: <%= androidversion %>
