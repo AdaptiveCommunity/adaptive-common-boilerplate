@@ -6,10 +6,10 @@ engine:
   version: <%= engineversion %>
 platforms:
   - name: android
-    version: 5.0
     flavors: 
-        - mobile
+        - name: mobile
+          version: 5.0
   - name: darwin
-    version: 8.0
     flavors: 
-        - mobile
+        - name: mobile
+          version: 8.0
