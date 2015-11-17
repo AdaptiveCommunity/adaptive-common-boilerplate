@@ -83,6 +83,9 @@ module.exports = function (grunt) {
             config: {
                 files: [{expand: true, cwd: 'config', src: ['*.xml', '*.plist'], dest: 'dist/config'}]
             },
+            assets: {
+                files: [{expand: true, cwd: 'assets', src: ['*'], dest: 'dist/assets'}]
+            },
             config_file: {
                 files: [{expand: true, cwd: '', src: 'adaptive.yml', dest: 'dist'}]
             }
@@ -122,7 +125,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', ['typescript', 'jshint', 'csslint']);
     grunt.registerTask('build', ['test', 'clean:dist', 'useminPrepare', 'concat:generated', 'cssmin:generated',
-        'uglify:generated', 'copy:release', 'replace:html', 'copy:config', 'copy:config_file', 'filerev', 'usemin', 'htmlmin']);
+        'uglify:generated', 'copy:release', 'replace:html', 'copy:config', 'copy:assets', 'copy:config_file', 'filerev', 'usemin', 'htmlmin']);
 
     // alias tasks
     grunt.registerTask('dist', ['build']);
