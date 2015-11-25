@@ -84,7 +84,7 @@ module.exports = function (grunt) {
                 files: [{expand: true, cwd: 'config', src: ['*.xml', '*.plist'], dest: 'dist/config'}]
             },
             assets: {
-                files: [{expand: true, cwd: 'assets', src: ['*'], dest: 'dist/assets'}]
+                files: [{expand: true, cwd: 'assets', src: ['*.*', '**/*.*'], dest: 'dist/assets'}]
             },
             config_file: {
                 files: [{expand: true, cwd: '', src: 'adaptive.yml', dest: 'dist'}]
